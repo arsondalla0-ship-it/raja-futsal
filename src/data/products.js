@@ -41,7 +41,7 @@ export const products = raw.map((p, i) => {
     category_name: cat?.name ?? "",
     rating: p.rating,
     desc: p.desc,
-    img: `/images/products/${baseSlug}.jpg`,
+    img: `${import.meta.env.BASE_URL}images/products/${baseSlug}.jpg`,
   };
 });
 
